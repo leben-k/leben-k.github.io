@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>地域情報室｜まにわ往来・にいみ往来・きびちゅう往来・みのお往来・かまくら往来</title>
+<meta name="description" content="地域情報室は、情報提供を通じて人々の活動を支援し、地域の賑わい創出に貢献することを目指しています。岡山県真庭市「まにわ往来」、新見市「にいみ往来」、吉備中央町「きびちゅう往来」、大阪府箕面市「みのお往来」、神奈川県鎌倉市「かまくら往来」の5つの観光情報サイトを運営しています。">
+<link rel="canonical" href="https://leben-k.github.io/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1F3A68">
+<meta property="og:type" content="website">
+<meta property="og:title" content="地域情報室｜5つのまちの観光情報サイト">
+<meta property="og:description" content="真庭・新見・吉備中央・箕面・鎌倉。地域情報室が運営する観光情報サイトの入口です。">
+<meta property="og:url" content="https://leben-k.github.io/">
+<meta property="og:site_name" content="地域情報室">
+<meta property="og:locale" content="ja_JP">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"https://leben-k.github.io/#org","name":"地域情報室","url":"https://leben-k.github.io/","logo":"https://leben-k.github.io/apple-touch-icon.png","description":"情報提供を通じて人々の活動を支援し、地域の賑わい創出に貢献することを目指しています。"},
+ {"@type":"WebSite","@id":"https://leben-k.github.io/#site","name":"地域情報室","url":"https://leben-k.github.io/","inLanguage":"ja","publisher":{"@id":"https://leben-k.github.io/#org"}},
+ {"@type":"ItemList","name":"地域情報室が運営するサイト","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebSite","name":"まにわ往来","url":"https://leben-k.github.io/maniwa/","publisher":{"@id":"https://leben-k.github.io/#org"}}},{"@type":"ListItem","position":2,"item":{"@type":"WebSite","name":"にいみ往来","url":"https://leben-k.github.io/niimi/","publisher":{"@id":"https://leben-k.github.io/#org"}}},{"@type":"ListItem","position":3,"item":{"@type":"WebSite","name":"きびちゅう往来","url":"https://leben-k.github.io/kibityu/","publisher":{"@id":"https://leben-k.github.io/#org"}}},{"@type":"ListItem","position":4,"item":{"@type":"WebSite","name":"みのお往来","url":"https://leben-k.github.io/minoh/","publisher":{"@id":"https://leben-k.github.io/#org"}}},{"@type":"ListItem","position":5,"item":{"@type":"WebSite","name":"かまくら往来","url":"https://leben-k.github.io/kamakura/","publisher":{"@id":"https://leben-k.github.io/#org"}}}]}
+]}
+</script>
+<style>
+:root{
+ --ai:#1F3A68;--ai-2:#2D5392;--paper:#FAFBF7;--ink:#1D2433;--sub:#566074;--line:#DCE2EA;
+ --c-man:#3E8A34;--c-nii:#C77A08;--c-kib:#6A3FA0;--c-min:#C8372D;--c-kam:#2372C4;
+ --gothic:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","BIZ UDPGothic","Yu Gothic",Meiryo,sans-serif;
+ --mincho:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP","BIZ UDPMincho",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--gothic);font-size:16px;line-height:1.85;-webkit-text-size-adjust:100%}
+a{color:var(--ai-2)}
+a:focus-visible{outline:3px solid #E8A21A;outline-offset:2px;border-radius:4px}
+img,svg{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+/* header */
+.top{background:var(--ai);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.08em}
+.brand svg{width:28px;height:28px}
+.top nav a{color:#DCE6F5;text-decoration:none;font-size:14px;margin-left:16px}
+.top nav a:hover{color:#fff;text-decoration:underline}
+
+/* hero */
+.hero{background:linear-gradient(180deg,#E7F0FA 0%,#F3F7EC 100%);position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:1;padding-top:48px;padding-bottom:150px}
+.hero h1{font-family:var(--mincho);font-weight:700;font-size:clamp(40px,8vw,72px);line-height:1.15;margin:0 0 12px;letter-spacing:.12em;color:var(--ai)}
+.hero .lead{font-size:clamp(17px,2.4vw,20px);margin:0 0 6px;font-weight:700;color:var(--ink)}
+.hero .mission{margin:0;color:var(--sub);max-width:34em}
+.ib{display:inline-block}
+.hills{position:absolute;left:0;right:0;bottom:0;width:100%;height:170px}
+
+/* route map (nav) */
+.route{background:#fff;border-top:4px solid var(--ai);border-bottom:1px solid var(--line)}
+.route .wrap{padding-top:22px;padding-bottom:26px}
+.route h2{font-size:15px;margin:0 0 14px;color:var(--sub);font-weight:700}
+.route ol{list-style:none;margin:0;padding:0;display:flex;justify-content:space-between;position:relative}
+.route ol::before{content:"";position:absolute;left:9%;right:9%;top:13px;height:6px;border-radius:3px;
+ background:linear-gradient(90deg,var(--c-man) 0 20%,var(--c-nii) 20% 40%,var(--c-kib) 40% 60%,var(--c-min) 60% 80%,var(--c-kam) 80% 100%)}
+.route li{flex:1;text-align:center;position:relative}
+.route a{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--ink);font-size:14px;font-weight:700;line-height:1.4;padding:0 4px}
+.route .stop{width:32px;height:32px;border-radius:50%;background:#fff;border:6px solid currentColor;margin-bottom:8px}
+.route a:hover .name{text-decoration:underline}
+.route .area{display:block;font-weight:400;color:var(--sub);font-size:12px}
+@media (max-width:640px){
+ .route ol{flex-direction:column;gap:14px;padding-left:4px}
+ .route ol::before{left:17px;right:auto;top:10px;bottom:10px;width:6px;height:auto;
+  background:linear-gradient(180deg,var(--c-man) 0 20%,var(--c-nii) 20% 40%,var(--c-kib) 40% 60%,var(--c-min) 60% 80%,var(--c-kam) 80% 100%)}
+ .route li{text-align:left}
+ .route a{flex-direction:row;gap:12px;text-align:left}
+ .route .stop{margin:0;flex:none}
+}
+
+/* groups */
+.group{padding:56px 0 8px}
+.group-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:8px}
+.group-head h2{font-family:var(--mincho);font-size:clamp(24px,3.6vw,32px);margin:0;line-height:1.3}
+.group-head p{margin:0;color:var(--sub);font-size:15px}
+
+.site{display:grid;grid-template-columns:240px 1fr;gap:32px;padding:36px 0;border-bottom:1px solid var(--line)}
+.site:last-child{border-bottom:0}
+.site .art{border-radius:18px;overflow:hidden;align-self:start;box-shadow:0 0 0 1px rgba(0,0,0,.04)}
+.site .area-tag{display:inline-block;font-size:13px;font-weight:700;color:#fff;background:var(--c);padding:2px 12px;border-radius:999px;margin-bottom:8px}
+.site h3{margin:0 0 4px;font-size:clamp(22px,3vw,27px);line-height:1.4}
+.site h3 a{color:var(--ink);text-decoration:none;border-bottom:3px solid var(--c)}
+.site h3 a:hover{color:var(--c)}
+.site .url{margin:0 0 12px;font-size:13px;color:var(--sub);word-break:break-all}
+.site .desc{margin:0 0 14px;max-width:40em}
+.site ul{margin:0 0 18px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:4px 20px;font-size:15px}
+.site li{padding-left:18px;position:relative}
+.site li::before{content:"";position:absolute;left:2px;top:.72em;width:8px;height:8px;border-radius:2px;background:var(--c);transform:rotate(45deg)}
+.site .for{font-size:14px;color:var(--sub);margin:0 0 18px}
+.site .for b{color:var(--ink)}
+.btn{display:inline-block;background:var(--c);color:#fff;text-decoration:none;font-weight:700;padding:11px 22px;border-radius:10px;font-size:15px}
+.btn:hover{filter:brightness(1.1)}
+.site.man{--c:var(--c-man)}.site.nii{--c:var(--c-nii)}.site.kib{--c:var(--c-kib)}.site.min{--c:var(--c-min)}.site.kam{--c:var(--c-kam)}
+@media (max-width:760px){
+ .site{grid-template-columns:1fr;gap:18px}
+ .site .art{max-width:240px}
+}
+
+.note{margin:40px 0 56px;padding:18px 22px;background:#fff;border:1px solid var(--line);border-radius:12px;font-size:14px;color:var(--sub)}
+.note p{margin:0}
+
+/* footer */
+footer{background:var(--ai);color:#DCE6F5;font-size:14px}
+footer .wrap{padding-top:36px;padding-bottom:28px;display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+footer h2{font-size:15px;color:#fff;margin:0 0 8px}
+footer a{color:#fff}
+footer ul{list-style:none;margin:0;padding:0;line-height:2}
+footer p{margin:0 0 8px}
+footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.2);padding-top:14px;font-size:13px;color:#AFC0DA}
+@media (max-width:640px){footer .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="brand" href="./" aria-label="地域情報室 トップ">
+   <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#fff" fill-opacity=".14"/><path d="M32 8c-8.3 0-15 6.5-15 14.6C17 33.5 32 46 32 46s15-12.5 15-23.4C47 14.5 40.3 8 32 8z" fill="#fff"/><circle cx="32" cy="22.5" r="6" fill="#E8A21A"/></svg>
+   地域情報室
+  </a>
+  <nav aria-label="メニュー"><a href="./#okayama">岡山県</a><a href="./#osaka-kanagawa">大阪・鎌倉</a><a href="about.html">運営者</a></nav>
+ </div>
+</header>
+<main>
+<section class="hero">
+ <div class="wrap">
+  <h1>地域情報室</h1>
+  <p class="lead"><span class="ib">高原の温泉から、</span><span class="ib">古都の社寺まで。</span><br><span class="ib">5つのまちの</span><span class="ib">観光情報サイトを</span><span class="ib">運営しています。</span></p>
+  <p class="mission">地域情報室は、情報提供を通じて人々の活動を支援し、地域の賑わい創出に貢献することを目指しています。</p>
+ </div>
+ <svg class="hills" viewBox="0 0 1200 170" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0 110 C120 60 220 40 330 80 S520 20 640 60 S860 30 980 70 S1140 50 1200 70 V170 H0Z" fill="#BFD7EE"/>
+  <path d="M0 130 C140 90 260 100 380 120 S600 70 720 105 S960 90 1060 115 S1170 100 1200 110 V170 H0Z" fill="#9CC98F"/>
+  <path d="M0 150 C160 125 300 140 460 148 S760 125 900 142 S1120 132 1200 140 V170 H0Z" fill="#5FA052"/>
+  <path d="M0 158 H1200" stroke="#4B5563" stroke-width="2"/>
+ </svg>
+</section>
+
+<nav class="route" aria-labelledby="route-h">
+ <div class="wrap">
+  <h2 id="route-h">運営サイト一覧（タップで紹介へ移動します）</h2>
+  <ol><li><a href="#maniwa" style="color:var(--c-man)"><span class="stop"></span><span style="color:var(--ink)"><span class="name">まにわ往来</span><span class="area">岡山県真庭市</span></span></a></li><li><a href="#niimi" style="color:var(--c-nii)"><span class="stop"></span><span style="color:var(--ink)"><span class="name">にいみ往来</span><span class="area">岡山県新見市</span></span></a></li><li><a href="#kibityu" style="color:var(--c-kib)"><span class="stop"></span><span style="color:var(--ink)"><span class="name">きびちゅう往来</span><span class="area">岡山県吉備中央町</span></span></a></li><li><a href="#minoh" style="color:var(--c-min)"><span class="stop"></span><span style="color:var(--ink)"><span class="name">みのお往来</span><span class="area">大阪府箕面市</span></span></a></li><li><a href="#kamakura" style="color:var(--c-kam)"><span class="stop"></span><span style="color:var(--ink)"><span class="name">かまくら往来</span><span class="area">神奈川県鎌倉市</span></span></a></li></ol>
+ </div>
+</nav>
+
+<div class="wrap">
+<section class="group" id="okayama" aria-labelledby="g1">
+ <div class="group-head"><h2 id="g1">岡山県をめぐる</h2><p>県北の高原と鍾乳洞、県中央の吉備高原を紹介しています。</p></div>
+
+ <article class="site man" id="maniwa">
+  <a class="art" href="https://leben-k.github.io/maniwa/" tabindex="-1" aria-hidden="true">
+   <svg viewBox="0 0 240 180"><rect width="240" height="180" fill="#DDEFF7"/>
+    <circle cx="195" cy="38" r="16" fill="#F4C542"/>
+    <path d="M0 110 Q40 55 80 100 Q115 50 150 98 Q190 45 240 105 V180 H0Z" fill="#6FAE5C"/>
+    <path d="M0 130 Q120 105 240 128 V180 H0Z" fill="#9CCB7E"/>
+    <g transform="translate(40 128)"><rect width="34" height="18" rx="7" fill="#C28B4E"/><rect x="28" y="-4" width="12" height="11" rx="4" fill="#C28B4E"/><rect x="4" y="16" width="4" height="10" fill="#8A5F31"/><rect x="24" y="16" width="4" height="10" fill="#8A5F31"/></g>
+    <ellipse cx="170" cy="160" rx="42" ry="12" fill="#7FC4E0"/>
+    <path d="M155 145 q-6 -10 0 -20 q6 -10 0 -20 M172 145 q-6 -10 0 -20 q6 -10 0 -20 M189 145 q-6 -10 0 -20 q6 -10 0 -20" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+   </svg>
+  </a>
+  <div>
+   <span class="area-tag">岡山県真庭市</span>
+   <h3><a href="https://leben-k.github.io/maniwa/">まにわ往来</a></h3>
+   <p class="url">https://leben-k.github.io/maniwa/</p>
+   <p class="desc">岡山県の最北、鳥取県境まで広がる真庭市の観光地・特産品・グルメ・祭り・宿泊をまとめた非公式の観光情報サイトです。高原、温泉、城下町と、ひとつの市でいくつもの旅を楽しむための案内をイラストとともに掲載しています。</p>
+   <ul><li>蒜山高原・蒜山三座、湯原温泉「砂湯」</li><li>勝山町並み保存地区、神庭の滝、醍醐桜</li><li>備中鐘乳穴、北房ホタルの里、旧遷喬尋常小学校</li><li>ジャージー牛乳、御前酒、蒜山ジンギスカン、郷原漆器などの特産品</li><li>蒜山・勝山・久世・湯原のエリア別グルメ</li><li>祭り・行事、旧町村ごとの地区紹介、宿泊施設</li></ul>
+   <p class="for"><b>こんな方に：</b>真庭市への旅行や、特産品のお取り寄せを考えている方</p>
+   <a class="btn" href="https://leben-k.github.io/maniwa/">まにわ往来を開く</a>
+  </div>
+ </article>
+ <article class="site nii" id="niimi">
+  <a class="art" href="https://leben-k.github.io/niimi/" tabindex="-1" aria-hidden="true">
+   <svg viewBox="0 0 240 180"><rect width="240" height="180" fill="#FBEBD2"/>
+    <path d="M0 180 V70 Q60 20 120 30 Q180 20 240 60 V180Z" fill="#B9A58F"/>
+    <path d="M60 180 V120 Q60 70 110 70 Q160 70 160 120 V180Z" fill="#3B2F2A"/>
+    <path d="M78 76 l5 18 5-16 M100 70 l4 22 4-22 M122 70 l4 16 4-15 M142 78 l3 14 4-12" fill="#D9CDBE"/>
+    <path d="M60 180 Q110 150 160 180" fill="#6FA6C9" opacity=".7"/>
+    <g transform="translate(188 92)"><path d="M0 -14 q4 -10 12 -12" stroke="#5B7F2E" stroke-width="4" fill="none"/><g fill="#5A2A6E"><circle cx="-8" cy="0" r="8"/><circle cx="8" cy="0" r="8"/><circle cx="0" cy="13" r="8"/><circle cx="-14" cy="13" r="8"/><circle cx="14" cy="13" r="8"/><circle cx="-6" cy="26" r="8"/><circle cx="8" cy="26" r="8"/><circle cx="1" cy="38" r="8"/></g></g>
+    <g transform="translate(20 150)"><rect width="46" height="18" rx="4" fill="#C77A08"/><rect x="4" y="4" width="10" height="7" fill="#FFF4DD"/><rect x="18" y="4" width="10" height="7" fill="#FFF4DD"/><rect x="32" y="4" width="10" height="7" fill="#FFF4DD"/></g>
+   </svg>
+  </a>
+  <div>
+   <span class="area-tag">岡山県新見市</span>
+   <h3><a href="https://leben-k.github.io/niimi/">にいみ往来</a></h3>
+   <p class="url">https://leben-k.github.io/niimi/</p>
+   <p class="desc">鳥取・広島と県境を接し、200余りの鍾乳洞が点在する新見市の観光地・特産品・産業・鉄道・祭り・宿泊をまとめた非公式の観光情報サイトです。オリジナルのイラストで、山あいのまちの見どころを紹介しています。</p>
+   <ul><li>満奇洞・井倉洞・羅生門などの鍾乳洞</li><li>鯉が窪湿原、新見御殿町、夢すき公園、大佐山</li><li>特産品「A級の誇り」（千屋牛、ピオーネ、キャビア、ワイン、紅茶など）</li><li>伯備線・姫新線・芸備線が集まる新見駅と鉄道</li><li>グルメ・お土産、スキーやキャンプなどの遊び場</li><li>産業・農業、祭り・行事、地区紹介、宿泊施設</li></ul>
+   <p class="for"><b>こんな方に：</b>新見市への旅行、鍾乳洞めぐりや味覚狩りを計画している方</p>
+   <a class="btn" href="https://leben-k.github.io/niimi/">にいみ往来を開く</a>
+  </div>
+ </article>
+ <article class="site kib" id="kibityu">
+  <a class="art" href="https://leben-k.github.io/kibityu/" tabindex="-1" aria-hidden="true">
+   <svg viewBox="0 0 240 180"><rect width="240" height="180" fill="#F7E9DF"/>
+    <path d="M0 40 Q30 30 60 70 L80 180 H0Z" fill="#C9532E"/><path d="M240 30 Q200 40 180 80 L160 180 H240Z" fill="#D9822B"/>
+    <path d="M0 70 Q20 60 45 90 L60 180 H0Z" fill="#E3A33A"/><path d="M240 80 Q215 85 200 110 L190 180 H240Z" fill="#B8432A"/>
+    <path d="M60 180 Q120 150 185 180Z" fill="#6FA6C9"/>
+    <path d="M52 108 Q120 70 190 108" stroke="#D12F2F" stroke-width="7" fill="none"/>
+    <path d="M52 108 H190" stroke="#D12F2F" stroke-width="4"/>
+    <g stroke="#D12F2F" stroke-width="3"><path d="M80 92 V108 M104 84 V108 M128 82 V108 M152 86 V108 M172 95 V108"/></g>
+    <g transform="translate(150 30)"><ellipse cx="0" cy="10" rx="18" ry="10" fill="#2F7FB5"/><circle cx="16" cy="4" r="7" fill="#1F5F8B"/><path d="M22 4 l8 2 -8 2Z" fill="#E0452E"/><path d="M-4 6 q-16 -14 -26 -2 q14 0 22 6Z" fill="#3A95C9"/></g>
+   </svg>
+  </a>
+  <div>
+   <span class="area-tag">岡山県吉備中央町</span>
+   <h3><a href="https://leben-k.github.io/kibityu/">きびちゅう往来</a></h3>
+   <p class="url">https://leben-k.github.io/kibityu/</p>
+   <p class="desc">「岡山のへそ」とも呼ばれる、標高200〜500mの吉備高原に広がる吉備中央町の観光地・特産品・グルメ・祭り・宿泊をまとめた非公式の観光情報サイトです。岡山桃太郎空港から車で約20分の高原の魅力を、イラストとともに紹介しています。</p>
+   <ul><li>紅葉と赤い橋の宇甘渓</li><li>吉川八幡宮、重森三玲記念館・天籟庵</li><li>吉備高原都市・きびプラザ、円城ふるさと村、片山邸</li><li>川辺の一軒宿・小森温泉、ブッポウソウの里</li><li>ピオーネ、シャインマスカット、ブルーベリー、円城白菜、ジビエなどの特産品</li><li>エリア別グルメ、祭り・行事、地区紹介、宿泊施設、アクセスマップ</li></ul>
+   <p class="for"><b>こんな方に：</b>吉備高原へのドライブや、ぶどう・ブルーベリー狩りを考えている方</p>
+   <a class="btn" href="https://leben-k.github.io/kibityu/">きびちゅう往来を開く</a>
+  </div>
+ </article>
+</section>
+
+<section class="group" id="osaka-kanagawa" aria-labelledby="g2">
+ <div class="group-head"><h2 id="g2">大阪府・神奈川県をめぐる</h2><p>滝と紅葉の箕面、古都・鎌倉を紹介しています。</p></div>
+
+ <article class="site min" id="minoh">
+  <a class="art" href="https://leben-k.github.io/minoh/" tabindex="-1" aria-hidden="true">
+   <svg viewBox="0 0 240 180"><rect width="240" height="180" fill="#FBE9E2"/>
+    <path d="M60 180 V30 Q120 10 180 30 V180Z" fill="#6B7A5A"/>
+    <path d="M104 26 H136 V150 H104Z" fill="#DDF1FB"/><path d="M110 30 V148 M122 28 V150 M130 30 V148" stroke="#fff" stroke-width="3"/>
+    <ellipse cx="120" cy="158" rx="54" ry="14" fill="#8CC7E6"/>
+    <g fill="#D8352A"><path d="M30 40 l6 12 12-4 -8 10 10 8 -13 0 -3 12 -4-12 -13 0 10-8 -8-10 12 4z"/><path d="M200 60 l5 10 10-3 -7 8 8 7 -11 0 -2 10 -4-10 -11 0 8-7 -7-8 10 3z"/></g>
+    <g fill="#E88A23"><path d="M40 110 l4 8 8-3 -5 7 7 5 -9 0 -2 8 -3-8 -9 0 7-5 -6-7 8 3z"/></g>
+    <g transform="translate(196 130)"><ellipse cx="0" cy="8" rx="20" ry="22" fill="#C8372D"/><ellipse cx="0" cy="2" rx="11" ry="10" fill="#FFF2E6"/><circle cx="-4" cy="1" r="2.5" fill="#1D2433"/><circle cx="4" cy="1" r="2.5" fill="#fff" stroke="#1D2433"/></g>
+   </svg>
+  </a>
+  <div>
+   <span class="area-tag">大阪府箕面市</span>
+   <h3><a href="https://leben-k.github.io/minoh/">みのお往来</a></h3>
+   <p class="url">https://leben-k.github.io/minoh/</p>
+   <p class="desc">北摂の山並みを背にした大阪府箕面市の観光地・特産品・駅と交通・産業・祭り・宿泊をまとめた非公式の情報サイトです。明治の森箕面国定公園の滝や社寺から、2024年開業の北大阪急行の新駅まで、歩く人の目線で案内しています。</p>
+   <ul><li>落差33mの箕面大滝と滝道・府営箕面公園</li><li>勝ちダルマの勝尾寺、瀧安寺、西江寺</li><li>箕面公園昆虫館、箕面ビジターセンター、萱野三平記念館</li><li>もみじの天ぷら、実生ゆず、止々呂美の山椒、箕面ビール</li><li>市内5駅と周辺駅・バス・道路の駅・交通ガイド、観光マップ</li><li>6つのエリア紹介、産業・農業、祭り・レジャー、宿泊</li></ul>
+   <p class="for"><b>こんな方に：</b>箕面の滝道ハイキングや紅葉狩り、社寺めぐりを計画している方</p>
+   <a class="btn" href="https://leben-k.github.io/minoh/">みのお往来を開く</a>
+  </div>
+ </article>
+ <article class="site kam" id="kamakura">
+  <a class="art" href="https://leben-k.github.io/kamakura/" tabindex="-1" aria-hidden="true">
+   <svg viewBox="0 0 240 180"><rect width="240" height="180" fill="#E4F0FB"/>
+    <path d="M0 120 Q60 80 120 100 Q180 70 240 105 V180 H0Z" fill="#7FB07A"/>
+    <path d="M0 150 Q30 140 60 150 T120 150 T180 150 T240 150 V180 H0Z" fill="#2372C4"/>
+    <path d="M0 160 Q30 152 60 160 T120 160 T180 160 T240 160" stroke="#fff" stroke-width="3" fill="none" opacity=".7"/>
+    <g transform="translate(62 44)"><rect x="-6" y="4" width="112" height="8" rx="3" fill="#C8372D"/><rect x="2" y="16" width="96" height="6" fill="#C8372D"/><rect x="14" y="16" width="8" height="70" fill="#C8372D"/><rect x="78" y="16" width="8" height="70" fill="#C8372D"/></g>
+    <g transform="translate(200 108)"><circle r="7" cx="0" cy="0" fill="#8E7CC3"/><circle r="7" cx="9" cy="4" fill="#7A9BD6"/><circle r="7" cx="-8" cy="6" fill="#A58BD0"/><circle r="7" cx="2" cy="11" fill="#6F8FD0"/></g>
+    <g transform="translate(30 108)"><circle r="7" cx="0" cy="0" fill="#7A9BD6"/><circle r="7" cx="9" cy="5" fill="#A58BD0"/><circle r="7" cx="-7" cy="7" fill="#8E7CC3"/></g>
+   </svg>
+  </a>
+  <div>
+   <span class="area-tag">神奈川県鎌倉市</span>
+   <h3><a href="https://leben-k.github.io/kamakura/">かまくら往来</a></h3>
+   <p class="url">https://leben-k.github.io/kamakura/</p>
+   <p class="desc">古都・鎌倉の観光地・名物・祭り・宿泊などをまとめた非公式の観光情報サイトです。社寺めぐりや海辺の散策など、鎌倉を訪れる前に知っておきたい情報を紹介しています。</p>
+   <ul><li>鎌倉の社寺と史跡</li><li>海辺と季節の花の名所</li><li>名物・グルメ・お土産</li><li>祭り・行事、エリア紹介、宿泊</li></ul>
+   <p class="for"><b>こんな方に：</b>鎌倉への旅行を計画している方</p>
+   <a class="btn" href="https://leben-k.github.io/kamakura/">かまくら往来を開く</a>
+  </div>
+ </article>
+</section>
+
+<aside class="note">
+ <p>各サイトは、自治体や観光協会などの公式サイトではありません。公開情報をもとに作成していますが、お出かけの際は、必ず各施設・自治体の公式情報をご確認ください。ご意見・誤りのご指摘は、各サイトの連絡先フォームからお寄せください。</p>
+</aside>
+</div>
+</main>
+<footer>
+ <div class="wrap">
+  <div>
+   <h2>地域情報室</h2>
+   <p>情報提供を通じて人々の活動を支援し、地域の賑わい創出に貢献することを目指しています。</p>
+   <p>運営者：<a href="about.html">運営者情報</a></p>
+  </div>
+  <div>
+   <h2>運営サイト</h2>
+   <ul><li><a href="https://leben-k.github.io/maniwa/">まにわ往来（岡山県真庭市）</a></li><li><a href="https://leben-k.github.io/niimi/">にいみ往来（岡山県新見市）</a></li><li><a href="https://leben-k.github.io/kibityu/">きびちゅう往来（岡山県吉備中央町）</a></li><li><a href="https://leben-k.github.io/minoh/">みのお往来（大阪府箕面市）</a></li><li><a href="https://leben-k.github.io/kamakura/">かまくら往来（神奈川県鎌倉市）</a></li></ul>
+  </div>
+  <p class="copy">© 2026 地域情報室</p>
+ </div>
+</footer>
+</body>
+</html>
