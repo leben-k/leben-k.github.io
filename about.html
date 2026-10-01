@@ -11,7 +11,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
-:root{
+:root{--c-man:#357A2C;--c-nii:#9A5A06;--c-kib:#6A3FA0;--c-min:#C8372D;--c-kam:#2372C4;--c-mus:#0E7477;--c-hac:#7A4E2A;
  --ai:#1F3A68;--ai-2:#2D5392;--paper:#FAFBF7;--ink:#1D2433;--sub:#566074;--line:#DCE2EA;
  
  --gothic:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","BIZ UDPGothic","Yu Gothic",Meiryo,sans-serif;
@@ -31,8 +31,6 @@ img,svg{max-width:100%;display:block}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.08em}
 .brand svg{width:28px;height:28px}
-.top nav a{color:#DCE6F5;text-decoration:none;font-size:14px;margin-left:16px}
-.top nav a:hover{color:#fff;text-decoration:underline}
 
 /* hero */
 .hero{background:linear-gradient(180deg,#E7F0FA 0%,#F3F7EC 100%);position:relative;overflow:hidden}
@@ -114,6 +112,33 @@ th{width:9em;background:#EEF3FA;color:var(--ai);font-weight:700;white-space:nowr
 td ul{margin:10px 0 0;padding-left:1.2em;font-size:15px}
 .back{margin-top:28px}
 @media (max-width:520px){th,td{display:block;width:auto}th{border-bottom:0;padding-bottom:6px}td{padding-top:6px}}
+
+.top .wrap{position:relative}
+.gnav{display:flex;align-items:center;gap:4px}
+.gnav .plain{color:#DCE6F5;text-decoration:none;font-size:14px;padding:8px 10px}
+.gnav .plain:hover{color:#fff;text-decoration:underline}
+.dd{position:relative}
+.dd summary{list-style:none;cursor:pointer;color:#DCE6F5;font-size:14px;padding:8px 10px;border-radius:8px;user-select:none;white-space:nowrap}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::after{content:"";display:inline-block;width:6px;height:6px;margin-left:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-3px) rotate(45deg);transition:transform .15s}
+.dd[open] summary,.dd summary:hover{color:#fff;background:rgba(255,255,255,.12)}
+.dd[open] summary::after{transform:translateY(0) rotate(-135deg)}
+.dd .menu{position:absolute;right:0;top:calc(100% + 6px);z-index:20;width:260px;background:#fff;color:var(--ink);border-radius:12px;box-shadow:0 10px 30px rgba(15,30,60,.25);padding:8px}
+.dd .menu ul{list-style:none;margin:0;padding:0}
+.dd .menu li a{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;text-decoration:none;color:var(--ink);line-height:1.4}
+.dd .menu li a:hover,.dd .menu li a:focus-visible{background:#EEF3FA}
+.dd .menu b{display:block;font-size:15px}
+.dd .menu small{display:block;color:var(--sub);font-size:12px}
+.dd .dot{width:12px;height:12px;border-radius:50%;flex:none}
+.dd .menu-head{display:block;font-size:12px;color:var(--ai-2);padding:4px 10px 8px;border-bottom:1px solid var(--line);margin-bottom:4px;text-decoration:none}
+.dd .menu-head:hover{text-decoration:underline}
+@media (max-width:640px){
+ .top .wrap{flex-wrap:wrap;padding-top:6px;padding-bottom:6px}
+ .gnav{width:100%;justify-content:space-between;gap:0}
+ .dd{position:static}
+ .dd .menu{left:12px;right:12px;width:auto;top:100%}
+ .dd summary,.gnav .plain{padding:8px 6px}
+}
 </style>
 </head>
 <body>
@@ -123,7 +148,7 @@ td ul{margin:10px 0 0;padding-left:1.2em;font-size:15px}
    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#fff" fill-opacity=".14"/><path d="M32 8c-8.3 0-15 6.5-15 14.6C17 33.5 32 46 32 46s15-12.5 15-23.4C47 14.5 40.3 8 32 8z" fill="#fff"/><circle cx="32" cy="22.5" r="6" fill="#E8A21A"/></svg>
    地域情報室
   </a>
-  <nav aria-label="メニュー"><a href="./#okayama">岡山</a><a href="./#osaka">大阪</a><a href="./#kanto">東京・神奈川</a><a href="about.html" aria-current="page">運営者</a></nav>
+  <nav class="gnav" aria-label="メニュー"><details class="dd"><summary>岡山</summary><div class="menu"><a class="menu-head" href="./#okayama">岡山県のサイト紹介へ</a><ul><li><a href="https://leben-k.github.io/maniwa/"><span class="dot" style="background:var(--c-man)"></span><span><b>まにわ往来</b><small>真庭市</small></span></a></li><li><a href="https://leben-k.github.io/niimi/"><span class="dot" style="background:var(--c-nii)"></span><span><b>にいみ往来</b><small>新見市</small></span></a></li><li><a href="https://leben-k.github.io/kibityu/"><span class="dot" style="background:var(--c-kib)"></span><span><b>きびちゅう往来</b><small>吉備中央町</small></span></a></li></ul></div></details><details class="dd"><summary>大阪</summary><div class="menu"><a class="menu-head" href="./#osaka">大阪府のサイト紹介へ</a><ul><li><a href="https://leben-k.github.io/minoh/"><span class="dot" style="background:var(--c-min)"></span><span><b>みのお往来</b><small>箕面市</small></span></a></li></ul></div></details><details class="dd"><summary>東京・神奈川</summary><div class="menu"><a class="menu-head" href="./#kanto">東京都・神奈川県のサイト紹介へ</a><ul><li><a href="https://leben-k.github.io/musashino-mitaka/"><span class="dot" style="background:var(--c-mus)"></span><span><b>むさしの・みたか往来</b><small>武蔵野市・三鷹市</small></span></a></li><li><a href="https://leben-k.github.io/hachioji/"><span class="dot" style="background:var(--c-hac)"></span><span><b>はちおうじ往来</b><small>八王子市</small></span></a></li><li><a href="https://leben-k.github.io/kamakura/"><span class="dot" style="background:var(--c-kam)"></span><span><b>かまくら往来</b><small>鎌倉市</small></span></a></li></ul></div></details><a class="plain" href="about.html" aria-current="page">運営者</a></nav>
  </div>
 </header>
 <main class="wrap">
@@ -155,5 +180,10 @@ td ul{margin:10px 0 0;padding-left:1.2em;font-size:15px}
   <p class="copy">© 2026 地域情報室</p>
  </div>
 </footer>
+<script>
+document.querySelectorAll('.dd').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){document.querySelectorAll('.dd[open]').forEach(function(o){if(o!==d)o.open=false;});}});});
+document.addEventListener('click',function(e){if(!e.target.closest('.dd'))document.querySelectorAll('.dd[open]').forEach(function(o){o.open=false;});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')document.querySelectorAll('.dd[open]').forEach(function(o){o.open=false;o.querySelector('summary').focus();});});
+</script>
 </body>
 </html>
