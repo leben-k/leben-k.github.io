@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://leben-k.github.io/sitemap.xml
+Sitemap: https://leben-k.github.io/kantei-site/sitemap.xml
+Sitemap: https://leben-k.github.io/hoshii/
+Sitemap: https://leben-k.github.io/kankatsu/
