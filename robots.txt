@@ -3,6 +3,18 @@ Allow: /
 
 Sitemap: https://leben-k.github.io/sitemap.xml
 Sitemap: https://leben-k.github.io/kantei-site/sitemap.xml
+Sitemap: https://leben-k.github.io/ai-kantei/sitemap.xml
 Sitemap: https://leben-k.github.io/hoshii/sitemap.xml
 Sitemap: https://leben-k.github.io/kankatsu/sitemap.xml
-Sitemap: https://leben-k.github.io/fuku-kuma/sitemap.xml
+Sitemap: https://leben-k.github.io/hokuriku/sitemap.xml
+Sitemap: https://leben-k.github.io/tokinoho/sitemap.xml
+Sitemap: https://leben-k.github.io/okayama-news/sitemap.xml
+Sitemap: https://leben-k.github.io/hachioji/sitemap.xml
+Sitemap: https://leben-k.github.io/suita-toyonaka/sitemap.xml
+Sitemap: https://leben-k.github.io/musashino-mitaka/sitemap.xml
+Sitemap: https://leben-k.github.io/kamakura/sitemap.xml
+Sitemap: https://leben-k.github.io/minoh/sitemap.xml
+Sitemap: https://leben-k.github.io/niimi/sitemap.xml
+Sitemap: https://leben-k.github.io/kibityu/sitemap.xml
+Sitemap: https://leben-k.github.io/maniwa/sitemap.xml
+Sitemap: https://leben-k.github.io/koukouniimi/sitemap.xml
