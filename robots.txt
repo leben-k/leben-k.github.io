@@ -5,3 +5,4 @@ Sitemap: https://leben-k.github.io/sitemap.xml
 Sitemap: https://leben-k.github.io/kantei-site/sitemap.xml
 Sitemap: https://leben-k.github.io/hoshii/sitemap.xml
 Sitemap: https://leben-k.github.io/kankatsu/sitemap.xml
+Sitemap: https://leben-k.github.io/fuku-kuma/sitemap.xml
