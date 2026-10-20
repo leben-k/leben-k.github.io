@@ -17,7 +17,7 @@ Sitemap: https://leben-k.github.io/minoh/sitemap.xml
 Sitemap: https://leben-k.github.io/niimi/sitemap.xml
 Sitemap: https://leben-k.github.io/kibityu/sitemap.xml
 Sitemap: https://leben-k.github.io/maniwa/sitemap.xml
-https://leben-k.github.io/musashino-mitaka/sitemap.xml
-https://leben-k.github.io/kamakura/sitemap.xml
-https://leben-k.github.io/minoh/sitemap.xml
+Sitemap: https://leben-k.github.io/musashino-mitaka/sitemap.xml
+Sitemap: https://leben-k.github.io/kamakura/sitemap.xml
+Sitemap: https://leben-k.github.io/minoh/sitemap.xml
 Sitemap: https://leben-k.github.io/koukouniimi/sitemap.xml
