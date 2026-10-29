@@ -10,9 +10,7 @@ Sitemap: https://leben-k.github.io/hokuriku/sitemap.xml
 Sitemap: https://leben-k.github.io/tokinoho/sitemap.xml
 Sitemap: https://leben-k.github.io/okayama-news/sitemap.xml
 Sitemap: https://leben-k.github.io/hachioji/sitemap.xml
-Sitemap: https://leben-k.github.io/suita-toyonaka/sitemap.xml
 Sitemap: https://leben-k.github.io/musashino-mitaka/sitemap.xml
-Sitemap: https://leben-k.github.io/minoh/sitemap.xml
 Sitemap: https://leben-k.github.io/niimi/sitemap.xml
 Sitemap: https://leben-k.github.io/kibityu/sitemap.xml
 Sitemap: https://leben-k.github.io/maniwa/sitemap.xml
