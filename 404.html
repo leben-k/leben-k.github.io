@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ページが見つかりません｜地域情報室</title>
 <meta name="robots" content="noindex">
+<script>
+(function(){
+  var p=location.pathname;
+  if(/^\/(suita-toyonaka|minoh)(\/|$)/.test(p)){
+    var base="https://suita-toyonaka-minoh.pages.dev/";
+    var known=["guide","map","areas","meibutsu","matsuri","shukuhaku","kotsu","unei"];
+    var m=p.match(/\/([a-z]+)\.html$/);
+    location.replace((m&&known.indexOf(m[1])>-1)?base+m[1]+".html":base);
+  }
+})();
+</script>
 <style>
 body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif;color:#1D2433;background:#FAFBF7;line-height:1.85}
 main{max-width:640px;margin:0 auto;padding:64px 20px}
